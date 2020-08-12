@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sugiwiranto.wisata" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+         <meta-data android:name="com.android.android.geo.API_KEY"
+             android:value="@string/map_key"/>
+        <activity android:name=".ViewPager.Walkt" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Social"></activity>
+        <activity android:name=".About"></activity>
+        <activity android:name=".DaftarWisata"></activity>
+        <activity android:name=".tampilan.Farm"></activity>
+        <activity android:name=".tampilan.Deranch"></activity>
+        <activity android:name=".tampilan.Lodge"></activity>
+        <activity android:name=".tampilan.Floating"></activity>
+        <activity android:name=".tampilan.Tangkuban"></activity>
+        <activity android:name=".tampilan.Orchid"></activity>
+        <activity android:name=".tampilan.Asia"></activity>
+        <activity android:name=".tampilan.Bambu"></activity>
+        <activity android:name=".tampilan.Begonia"></activity>
+
+    </application>
+
+</manifest>
